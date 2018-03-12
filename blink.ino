@@ -39,5 +39,8 @@ void loop() {
     timer2 = timer;
     Serial.println(timer);
   }
+  if (sensorValue < 1024*3/4){
+    digitalWrite(9, LOW);
+  }
   }
 }
